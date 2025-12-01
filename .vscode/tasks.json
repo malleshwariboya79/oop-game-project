@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run Tic-Tac-Toe",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "g++ '${workspaceFolder}/tik-tok/main.cpp' -o '${workspaceFolder}/tik-tok/tic_tac.exe' -I 'C:/raylib/w64devkit/x86_64-w64-mingw32/include' -L 'C:/raylib/w64devkit/x86_64-w64-mingw32/lib' -lraylib -lopengl32 -lgdi32 -lwinmm -lws2_32; & '${workspaceFolder}/tik-tok/tic_tac.exe'"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
