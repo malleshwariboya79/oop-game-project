@@ -1,5 +1,5 @@
 #include <iostream>
-#include "raylib.h"
+#include "raylib.h" //c++ game library
 
 const int SIZE = 3;
 const int CELL = 150;
@@ -79,7 +79,7 @@ int main()
         }
 
         BeginDrawing();
-        ClearBackground(RAYWHITE);
+        ClearBackground(RAYWHITE); 
 
         // Grid
         for(int i=1;i<3;i++)
@@ -110,7 +110,7 @@ int main()
             DrawText("Press R to Restart", 40, HEIGHT/2 + 20, 20, GRAY);
         }
 
-        EndDrawing();
+        EndDrawing(); 
     }
 
     CloseWindow();
