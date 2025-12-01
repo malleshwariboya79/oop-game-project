@@ -31,7 +31,8 @@ int CheckWinner()
 
     return 0;
 }
-
+ 
+// check if the board is full
 bool IsFull()
 {
     for(int r=0;r<3;r++)
