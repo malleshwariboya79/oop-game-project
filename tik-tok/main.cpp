@@ -11,6 +11,7 @@ int player = 1;
 bool gameOver = false;
 int winner = 0;
 
+//check for a winner 
 int CheckWinner()
 {
     for(int i=0;i<3;i++)
